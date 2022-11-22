@@ -1,0 +1,14 @@
+.featured-wrapper .swiper-horizontal>.swiper-pagination-bullets,
+.featured-wrapper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.featured-wrapper .swiper-pagination-custom,
+.featured-wrapper .swiper-pagination-fraction {
+    bottom: -0px !important;
+}
+
+.featured-wrapper .swiper-pointer-events {
+    padding: 35px 0 !important;
+}
+
+.featured-wrapper .swiper-pagination-bullet-active {
+    background: #77287D !important;
+}

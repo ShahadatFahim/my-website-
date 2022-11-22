@@ -1,0 +1,72 @@
+.login-register-hover {
+    transition: all 5s ease;
+}
+
+.login-register-hover:hover .icon {
+    background-color: #77287D;
+    color: #fff;
+}
+
+.login-register-hover:hover span {
+    color: #500d55;
+}
+
+#search {
+    width: 360px;
+}
+
+
+/* Tab and Mobile Version */
+
+.search-option-hover .hover-search {
+    display: none;
+}
+
+.search-option-hover:hover .hover-search {
+    position: absolute;
+    display: block;
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/* Start Responsive Part */
+
+@media only screen and (min-width: 200px) and (max-width: 1074px) {
+
+    #search {
+        width: 340px;
+    }
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1024px) {
+
+    .middle-header-wrapper {
+        position: relative;
+    }
+
+    .login-register-wrapper {
+        position: absolute;
+        left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 867px) {
+
+    #search {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 536px) {
+
+    #search {
+        width: 222px;
+    }
+
+}
+
+/* End Responsive Part */

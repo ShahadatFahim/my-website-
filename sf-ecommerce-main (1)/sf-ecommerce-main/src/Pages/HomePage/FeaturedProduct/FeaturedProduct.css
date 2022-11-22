@@ -1,0 +1,100 @@
+.highlight-title {
+    position: relative;
+}
+
+.highlight-title::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #77287D;
+    bottom: 0;
+    left: 50%;
+    margin: -25px;
+}
+
+.featured-link-part ul li a {
+    position: relative;
+}
+
+.featured-link-part ul li a:hover {
+    background-color: #77287D;
+    color: #F0BE47;
+}
+
+.featured-link-part ul li a:hover::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #77287D;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    transform: rotate(45deg);
+}
+
+/* Active Link Part */
+
+.active {
+    position: relative;
+    color: #F0BE47;
+    background-color: #77287D;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #77287D;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    transform: rotate(45deg);
+    z-index: 9;
+}
+
+.inactive {
+    background-color: #F6F6F6;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 18px;
+    text-transform: uppercase;
+}
+
+/* Start Responsive Part */
+
+@media only screen and (min-width: 200px) and (max-width: 991px) {
+
+    .banner-wrapper {
+        grid-template-columns: 100%;
+    }
+
+    .active {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 6px 12px;
+    }
+
+    .inactive {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 8px 9px;
+    }
+
+    .active::after {
+        width: 14px;
+        height: 14px;
+        z-index: 9;
+        bottom: -7px;
+    }
+
+}
+
+/* End Responsive Part */
